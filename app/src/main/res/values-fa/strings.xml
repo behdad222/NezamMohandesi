@@ -1,2 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+
+    <string name="app_name">نظام مهندس</string>
+    <string name="app_title">قوانین نظام مهندسی</string>
+    <string name="list">فهرست مطالب</string>
+    <string name="search">جست‌وجو مطالب</string>
+    <string name="select">مطالب منتخب</string>
+    <string name="source">منابع</string>
+    <string name="about">درباره ما</string>
+    <string name="contact">تماس با ما</string>
+    <string name="chapter1">فصل ۱</string>
+    <string name="chapter2">فصل ۲</string>
+    <string name="chapter3">فصل ۳</string>
+    <string name="chapter4">فصل ۴</string>
+    <string name="chapter5">فصل ۵</string>
+    <string name="chapter6">فصل ۶</string>
+    <string name="chapter7">فصل ۷</string>
+    <string name="chapter8">فصل ۸</string>
+    <string name="chapter9">فصل ۹</string>
+    <string name="chapter10">فصل ۱۰</string>
+
+</resources>
