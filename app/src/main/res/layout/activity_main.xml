@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ir.rima.mohandesi.app.MainActivity"
+    android:background="#3f9dd9">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="ListClick"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/list" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SearchButton"
+        android:layout_below="@+id/ListButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="SearchClick"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/search" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SelectButton"
+        android:layout_below="@+id/SearchButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="SelectClick"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/select" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SourceButton"
+        android:layout_below="@+id/SelectButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="SourceClick"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/source" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AboutButton"
+        android:onClick="AboutClick"
+        android:src="@drawable/about"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="49dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ContactButton"
+        android:onClick="ContactClick"
+        android:src="@drawable/contact"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/AboutButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>
