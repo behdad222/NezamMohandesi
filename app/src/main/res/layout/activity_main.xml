@@ -31,7 +31,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/ListButton"
         android:text="@string/list"
-        android:layout_centerHorizontal="true"
         android:onClick="ListClick"
         android:layout_below="@+id/imageView"
         style="@style/ButtonStyle1" />
@@ -42,7 +41,6 @@
         android:id="@+id/SearchButton"
         android:text="@string/search"
         android:layout_below="@+id/ListButton"
-        android:layout_centerHorizontal="true"
         android:onClick="SearchClick"
         style="@style/ButtonStyle1"/>
 
@@ -52,7 +50,6 @@
         android:id="@+id/SelectButton"
         android:text="@string/select"
         android:layout_below="@+id/SearchButton"
-        android:layout_centerHorizontal="true"
         android:onClick="SelectClick"
         style="@style/ButtonStyle1"/>
 
@@ -62,7 +59,6 @@
         android:id="@+id/SourceButton"
         android:text="@string/source"
         android:layout_below="@+id/SelectButton"
-        android:layout_centerHorizontal="true"
         android:onClick="SourceClick"
         style="@style/ButtonStyle1" />
 
@@ -115,10 +111,6 @@
         android:layout_alignRight="@+id/line"
         android:layout_marginBottom="10dp" />
 
-
-
-
-
     <View android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@drawable/circle"
@@ -126,7 +118,6 @@
         android:id="@+id/circle"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="14dp" />
-
 
     <View
         android:layout_width="5dp"
@@ -136,7 +127,5 @@
         android:layout_alignParentTop="false"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true" />
-
-
 
 </RelativeLayout>

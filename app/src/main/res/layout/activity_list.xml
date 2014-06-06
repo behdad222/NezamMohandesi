@@ -5,153 +5,157 @@
     tools:context="ir.rima.mohandesi.app.ListActivity"
     android:background="#3f9dd9">
 
-    <Button
-        android:layout_width="250dp"
-        android:layout_height="0dp"
-        android:text="@string/chapter9"
-        android:id="@+id/space"
-        android:layout_gravity="center_horizontal"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible"/>
-
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/scrollView"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/space"
-        android:layout_alignRight="@+id/space"
-        android:layout_alignLeft="@+id/space"
-        android:layout_above="@+id/Relative">
+        android:layout_above="@+id/circle"
+        android:layout_centerHorizontal="true">
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/linearLayout"
-            android:orientation="vertical"
-            android:layout_gravity="center_horizontal">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter1"
         android:id="@+id/chapter1button"
-        android:layout_gravity="center_horizontal"
-        style="@style/ButtonStyle1"/>'
-
+        style="@style/ButtonStyle1"/>
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter2"
         android:id="@+id/chapter2button"
-        android:layout_gravity="center_horizontal"
-        style="@style/ButtonStyle1"/>
+        style="@style/ButtonStyle1"
+        android:layout_below="@+id/chapter1button" />
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter3"
         android:id="@+id/chapter3button"
-        android:layout_gravity="center_horizontal"
-        style="@style/ButtonStyle1"/>
+        style="@style/ButtonStyle1"
+        android:layout_below="@+id/chapter2button" />
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter4"
         android:id="@+id/chapter4button"
-        android:layout_gravity="center_horizontal"
-        style="@style/ButtonStyle1" />
+        style="@style/ButtonStyle1"
+        android:layout_below="@+id/chapter3button" />
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter5"
         android:id="@+id/chapter5button"
-        android:layout_gravity="center_horizontal"
-        style="@style/ButtonStyle1"/>
+        style="@style/ButtonStyle1"
+        android:layout_below="@+id/chapter4button" />
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter6"
         android:id="@+id/chapter6button"
-        android:layout_gravity="center_horizontal"
-        style="@style/ButtonStyle1"/>
+        style="@style/ButtonStyle1"
+        android:layout_below="@+id/chapter5button" />
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter7"
         android:id="@+id/chapter7button"
-        android:layout_gravity="center_horizontal"
-        style="@style/ButtonStyle1"/>
+        style="@style/ButtonStyle1"
+        android:layout_below="@+id/chapter6button" />
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter8"
         android:id="@+id/chapter8button"
-        android:layout_gravity="center_horizontal"
-        style="@style/ButtonStyle1"/>
+        style="@style/ButtonStyle1"
+        android:layout_below="@+id/chapter7button" />
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter9"
         android:id="@+id/chapter9button"
-        android:layout_gravity="center_horizontal"
-        style="@style/ButtonStyle1"/>
+        style="@style/ButtonStyle1"
+        android:layout_below="@+id/chapter8button" />
 
     <Button
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter10"
             android:id="@+id/chapter10button"
-            android:layout_gravity="center_horizontal"
-            style="@style/ButtonStyle1"/>
+            style="@style/ButtonStyle1"
+        android:layout_below="@+id/chapter9button" />
 
-        </LinearLayout>
+        </RelativeLayout>
     </ScrollView>
 
-
-    <RelativeLayout
+    <View
         android:layout_width="fill_parent"
-        android:layout_height="50dp"
+        android:layout_height="68dp"
         android:background="#fff"
-        android:id="@+id/Relative"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true" />
 
-    </RelativeLayout>
-
-
-
-    <ImageButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/AboutButton"
+        android:text="@string/about"
         android:onClick="AboutClick"
-        android:src="@drawable/about"
+        style="@style/ButtonStyle1"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="false"
-        android:layout_alignParentEnd="false"
-        android:layout_alignRight="@+id/space" />
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_background_2"
+        android:textColor="#074e7b"
+        android:layout_alignParentLeft="false"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignLeft="@+id/line"
+        android:layout_marginBottom="10dp" />
 
-    <ImageButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ContactButton"
+        android:text="@string/contact"
         android:onClick="ContactClick"
-        android:src="@drawable/contact"
+        style="@style/ButtonStyle1"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentStart="false"
-        android:layout_alignLeft="@+id/space" />
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/button_background_2"
+        android:textColor="#074e7b"
+        android:layout_alignParentRight="false"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignRight="@+id/line"
+        android:layout_marginBottom="10dp" />
+
+    <View android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/circle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp" />
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="68dp"
+        android:background="#fff"
+        android:id="@+id/line"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>
