@@ -10,7 +10,7 @@
         android:layout_height="fill_parent"
         android:id="@+id/scrollView"
         android:layout_gravity="center_horizontal"
-        android:layout_above="@+id/circle"
+        android:layout_above="@+id/line"
         android:layout_centerHorizontal="true">
 
             <RelativeLayout
@@ -24,7 +24,7 @@
         android:id="@+id/chapter1button"
         style="@style/ButtonStyle1"/>
 
-    <Button
+    <ir.rima.mohandesi.app
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter2"
