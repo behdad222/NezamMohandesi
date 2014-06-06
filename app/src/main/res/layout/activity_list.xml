@@ -38,7 +38,7 @@
         android:text="@string/chapter1"
         android:id="@+id/chapter1button"
         android:layout_gravity="center_horizontal"
-        style="@style/btnStyleBeige"/>'
+        style="@style/ButtonStyle1"/>'
 
 
     <Button
@@ -47,7 +47,7 @@
         android:text="@string/chapter2"
         android:id="@+id/chapter2button"
         android:layout_gravity="center_horizontal"
-        style="@style/btnStyleBeige"/>
+        style="@style/ButtonStyle1"/>
 
     <Button
         android:layout_width="fill_parent"
@@ -55,7 +55,7 @@
         android:text="@string/chapter3"
         android:id="@+id/chapter3button"
         android:layout_gravity="center_horizontal"
-        style="@style/btnStyleBeige"/>
+        style="@style/ButtonStyle1"/>
 
     <Button
         android:layout_width="fill_parent"
@@ -63,7 +63,7 @@
         android:text="@string/chapter4"
         android:id="@+id/chapter4button"
         android:layout_gravity="center_horizontal"
-        style="@style/btnStyleBeige" />
+        style="@style/ButtonStyle1" />
 
     <Button
         android:layout_width="fill_parent"
@@ -71,7 +71,7 @@
         android:text="@string/chapter5"
         android:id="@+id/chapter5button"
         android:layout_gravity="center_horizontal"
-        style="@style/btnStyleBeige"/>
+        style="@style/ButtonStyle1"/>
 
     <Button
         android:layout_width="fill_parent"
@@ -79,7 +79,7 @@
         android:text="@string/chapter6"
         android:id="@+id/chapter6button"
         android:layout_gravity="center_horizontal"
-        style="@style/btnStyleBeige"/>
+        style="@style/ButtonStyle1"/>
 
     <Button
         android:layout_width="fill_parent"
@@ -87,7 +87,7 @@
         android:text="@string/chapter7"
         android:id="@+id/chapter7button"
         android:layout_gravity="center_horizontal"
-        style="@style/btnStyleBeige"/>
+        style="@style/ButtonStyle1"/>
 
     <Button
         android:layout_width="fill_parent"
@@ -95,7 +95,7 @@
         android:text="@string/chapter8"
         android:id="@+id/chapter8button"
         android:layout_gravity="center_horizontal"
-        style="@style/btnStyleBeige"/>
+        style="@style/ButtonStyle1"/>
 
     <Button
         android:layout_width="fill_parent"
@@ -103,7 +103,7 @@
         android:text="@string/chapter9"
         android:id="@+id/chapter9button"
         android:layout_gravity="center_horizontal"
-        style="@style/btnStyleBeige"/>
+        style="@style/ButtonStyle1"/>
 
     <Button
         android:layout_width="fill_parent"
@@ -111,7 +111,7 @@
         android:text="@string/chapter10"
             android:id="@+id/chapter10button"
             android:layout_gravity="center_horizontal"
-            style="@style/btnStyleBeige"/>
+            style="@style/ButtonStyle1"/>
 
         </LinearLayout>
     </ScrollView>
