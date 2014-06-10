@@ -21,10 +21,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter1"
+        android:onClick="ShowClick"
         android:id="@+id/chapter1button"
         style="@style/ButtonStyle1"/>
 
-    <ir.rima.mohandesi.app
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter2"

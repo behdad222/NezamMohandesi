@@ -37,7 +37,17 @@ public class MainActivity extends Activity {
         startActivity(i);
     }
 
+    public void SearchClick (View view) {
+        Intent i = new Intent(this, ir.rima.mohandesi.app.SelectActivity.class);
+        startActivity(i);
+    }
+
     public void SelectClick (View view) {
+        Intent i = new Intent(this, ir.rima.mohandesi.app.SelectActivity.class);
+        startActivity(i);
+    }
+
+    public void SourceClick (View view) {
         Intent i = new Intent(this, ir.rima.mohandesi.app.SelectActivity.class);
         startActivity(i);
     }
