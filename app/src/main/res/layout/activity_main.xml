@@ -37,20 +37,11 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/SearchButton"
-        android:text="@string/search"
-        android:layout_below="@+id/ListButton"
-        android:onClick="SearchClick"
-        style="@style/ButtonStyle1"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/SelectButton"
         android:text="@string/select"
-        android:layout_below="@+id/SearchButton"
         android:onClick="SelectClick"
-        style="@style/ButtonStyle1"/>
+        style="@style/ButtonStyle1"
+        android:layout_below="@+id/ListButton" />
 
     <Button
         android:layout_width="wrap_content"

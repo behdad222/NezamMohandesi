@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
+    Button button;
+
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +28,23 @@ public class MainActivity extends Activity {
         actionBar.setDisplayShowCustomEnabled(true);*/
 
         String fontPath = "fonts/BYekan.ttf";
-        Button button = (Button) findViewById(R.id.ListButton);
+        button = (Button) findViewById(R.id.ListButton);
         Typeface font = Typeface.createFromAsset(getAssets(), fontPath);
         button.setTypeface(font);
+
+        button = (Button) findViewById(R.id.SelectButton);
+        button.setTypeface(font);
+
+        button = (Button) findViewById(R.id.SourceButton);
+        button.setTypeface(font);
+
+        button = (Button) findViewById(R.id.AboutButton);
+        button.setTypeface(font);
+
+        button = (Button) findViewById(R.id.ContactButton);
+        button.setTypeface(font);
+
+
 
     }
 
@@ -58,10 +74,10 @@ public class MainActivity extends Activity {
         final AlertDialog AboutDialog = new AlertDialog.Builder(this).create();
         AboutDialog.setView(AboutDialogView);
         TextView textDialog;
-        if (AboutDialogView != null) {
+    /*    if (AboutDialogView != null) {
             textDialog = (TextView) AboutDialogView.findViewById(R.id.txt_dialog);
             textDialog.setText("dddddddddddd");
-        }
+        }*/
         AboutDialog.show();
     }
 
@@ -73,18 +89,9 @@ public class MainActivity extends Activity {
         TextView textDialog;
         if (AboutDialogView != null) {
             textDialog = (TextView) AboutDialogView.findViewById(R.id.txt_dialog);
-            textDialog.setText("آدرس دفتر مرکزی: ‌تهران، بزرگراه اشرفی اصفهانی، خیابان باهنر، پلاک ۱۷۰\n" +
-                    "خط ویژه: 15 65 95 44 - 021\n" +
-                    "فکس : 16 65 95 44 - 021\n" +
-                    "روابط عمومی: info@rima.ir \n" +
-                    "واحد گرافیک:graphic@rima.ir \n" +
-                    "واحد برنامه نویسی و توسعه وب: web@rima.ir \n" +
-                    "واحد فیلم و انیمیشن: film@rima.ir \n" +
-                    "واحد برنامه نویسی موبایل: mobile@rima.ir \n" +
-                    "واحد پشتیبانی: support@rima.ir \n" +
-                    "واحد فروش: sales@rima.ir \n" +
-                    "واحد مدیریت ارتباط با مشتریان: crm@rima.ir \n" +
-                    "واحد سامانه پیام کوتاه: sms@rima.ir ");
+            textDialog.setText("این برنامه به سفارش دانشگاه آزاد اسلامی واحد مهدیشهر توسط شرکت فناوری اطلاعات وارتباطات ریما نوشته شده است \n" +
+                    "\n" +
+                    "در صورتی که نیاز به اطلاعات بیشتر یا طراحی سایت و برنامه نویسی موبایل اختصاصی دارید با شماره تماس 44956515 تماس حاصل فرمایید.");
         }
         AboutDialog.show();
     }

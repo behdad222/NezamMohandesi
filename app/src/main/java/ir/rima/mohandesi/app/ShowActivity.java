@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebChromeClient;
@@ -18,12 +19,14 @@ public class ShowActivity extends Activity {
     WebView webView;
     final Activity activity = this;
     ProgressDialog progressDialog;
+    String keyword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show);
 
+        String value = getIntent().getStringExtra("fasl");
 
         webView = (WebView) findViewById(R.id.webView);
         webView.setScrollbarFadingEnabled(false);
@@ -32,7 +35,7 @@ public class ShowActivity extends Activity {
         webView.clearCache(true);
 
 
-        webView.loadUrl("file:///android_asset/www/index.html");
+        webView.loadUrl("file:///android_asset/www/fasl"+value+".html");
 /*
         webView.setWebChromeClient(new WebChromeClient() {
             public void onProgressChanged(WebView view, int progress) {
@@ -54,7 +57,8 @@ public class ShowActivity extends Activity {
             }
         });*/
 
-        Button search = (Button) findViewById(R.id.butSearch);
+
+  /*      Button search = (Button) findViewById(R.id.butSearch);
         search.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //set up button for search keyword of the webView
@@ -63,12 +67,6 @@ public class ShowActivity extends Activity {
                 dSearch.setCancelable(true);
                 dSearch.setTitle("xcxc");
 
-                Button cancel = (Button) dSearch.findViewById(R.id.searchCancel);
-                cancel.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        dSearch.dismiss();
-                    }
-                });
 
                 Button search = (Button) dSearch.findViewById(R.id.searchAdd);
                 search.setOnClickListener(new View.OnClickListener() {
@@ -87,9 +85,48 @@ public class ShowActivity extends Activity {
                 });
                 dSearch.show();
             }
-        });
+        });*/
 
 
+    }
+
+    public void next (View view) {
+        EditText etkw = (EditText) findViewById(R.id.textSearch);
+        String word;
+        word = etkw.getText().toString();
+
+        if (word.equals(keyword)) {
+            webView.findNext(true);
+        } else {
+            keyword = word;
+            webView.findAll(keyword);
+            try {
+                Method m = WebView.class.getMethod("setFindIsUp", Boolean.TYPE);
+                m.invoke(webView, true);
+            } catch (Throwable ignored) {
+            }
+        }
+    }
+
+
+
+    public void Previous (View view) {
+        EditText etkw = (EditText) findViewById(R.id.textSearch);
+        String word;
+        word = etkw.getText().toString();
+
+        if (word.equals(keyword)) {
+            webView.findNext(false);
+        } else {
+
+            keyword = word;
+            webView.findAll(keyword);
+            try {
+                Method m = WebView.class.getMethod("setFindIsUp", Boolean.TYPE);
+                m.invoke(webView, true);
+            } catch (Throwable ignored) {
+            }
+        }
     }
 
 }

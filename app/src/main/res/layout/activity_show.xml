@@ -8,15 +8,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/webView"
-        android:layout_below="@+id/butSearch" />
+        android:layout_below="@+id/Previous" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/butSearch"
+        android:text="قبلی"
+        android:id="@+id/Previous"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:onClick="Previous"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="بعدی"
+        android:id="@+id/next"
+        android:onClick="next"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="جست‌وجو"
+        android:id="@+id/textSearch"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/Previous"
+        android:layout_toLeftOf="@+id/next"
+        android:layout_toRightOf="@+id/Previous" />
 
 </RelativeLayout>

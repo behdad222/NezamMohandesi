@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter1"
-        android:onClick="ShowClick"
+        android:onClick="fasl1"
         android:id="@+id/chapter1button"
         style="@style/ButtonStyle1"/>
 
@@ -29,6 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter2"
+        android:onClick="fasl2"
         android:id="@+id/chapter2button"
         style="@style/ButtonStyle1"
         android:layout_below="@+id/chapter1button" />
@@ -37,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter3"
+        android:onClick="fasl3"
         android:id="@+id/chapter3button"
         style="@style/ButtonStyle1"
         android:layout_below="@+id/chapter2button" />
@@ -45,6 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter4"
+        android:onClick="fasl4"
         android:id="@+id/chapter4button"
         style="@style/ButtonStyle1"
         android:layout_below="@+id/chapter3button" />
@@ -53,6 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter5"
+        android:onClick="fasl5"
         android:id="@+id/chapter5button"
         style="@style/ButtonStyle1"
         android:layout_below="@+id/chapter4button" />
@@ -61,41 +65,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/chapter6"
+        android:onClick="fasl6"
         android:id="@+id/chapter6button"
         style="@style/ButtonStyle1"
         android:layout_below="@+id/chapter5button" />
 
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/chapter7"
-        android:id="@+id/chapter7button"
+        android:text="کامل"
+        android:onClick="total"
+        android:id="@+id/chapter10button"
         style="@style/ButtonStyle1"
         android:layout_below="@+id/chapter6button" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chapter8"
-        android:id="@+id/chapter8button"
-        style="@style/ButtonStyle1"
-        android:layout_below="@+id/chapter7button" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chapter9"
-        android:id="@+id/chapter9button"
-        style="@style/ButtonStyle1"
-        android:layout_below="@+id/chapter8button" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chapter10"
-            android:id="@+id/chapter10button"
-            style="@style/ButtonStyle1"
-        android:layout_below="@+id/chapter9button" />
 
         </RelativeLayout>
     </ScrollView>
