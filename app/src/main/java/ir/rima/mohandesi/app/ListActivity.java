@@ -19,7 +19,6 @@ public class ListActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-
         String fontPath = "fonts/BYekan.ttf";
         Typeface font = Typeface.createFromAsset(getAssets(), fontPath);
         button = (Button) findViewById(R.id.chapter1button);
@@ -34,7 +33,7 @@ public class ListActivity extends Activity {
         button.setTypeface(font);
         button = (Button) findViewById(R.id.chapter6button);
         button.setTypeface(font);
-        button = (Button) findViewById(R.id.chapter10button);
+        button = (Button) findViewById(R.id.total_button);
         button.setTypeface(font);
         button = (Button) findViewById(R.id.AboutButton);
         button.setTypeface(font);
@@ -42,76 +41,72 @@ public class ListActivity extends Activity {
         button.setTypeface(font);
     }
 
-    public void fasl1 (View view) {
+    public void Chapter1Click(View view) {
         Intent i = new Intent(this, ir.rima.mohandesi.app.ShowActivity.class);
         i.putExtra("fasl", "1");
         startActivity(i);
     }
 
-    public void fasl2 (View view) {
+    public void Chapter2Click(View view) {
         Intent i = new Intent(this, ir.rima.mohandesi.app.ShowActivity.class);
         i.putExtra("fasl", "2");
         startActivity(i);
     }
 
-    public void fasl3 (View view) {
+    public void Chapter3Click(View view) {
         Intent i = new Intent(this, ir.rima.mohandesi.app.ShowActivity.class);
         i.putExtra("fasl", "3");
         startActivity(i);
     }
 
-    public void fasl4 (View view) {
+    public void Chapter4Click(View view) {
         Intent i = new Intent(this, ir.rima.mohandesi.app.ShowActivity.class);
         i.putExtra("fasl", "4");
         startActivity(i);
     }
 
-    public void fasl5 (View view) {
+    public void Chapter5Click(View view) {
         Intent i = new Intent(this, ir.rima.mohandesi.app.ShowActivity.class);
         i.putExtra("fasl", "5");
         startActivity(i);
     }
 
-    public void fasl6 (View view) {
+    public void Chapter6Click(View view) {
         Intent i = new Intent(this, ir.rima.mohandesi.app.ShowActivity.class);
         i.putExtra("fasl", "6");
         startActivity(i);
     }
 
-    public void total (View view) {
+    public void totalClick(View view) {
         Intent i = new Intent(this, ir.rima.mohandesi.app.ShowActivity.class);
         i.putExtra("fasl","t");
         startActivity(i);
     }
 
-
-
     public void AboutClick(View view) {
         LayoutInflater factory = LayoutInflater.from(this);
-        final View AboutDialogView = factory.inflate(R.layout.about_dialog, null);
-        final AlertDialog AboutDialog = new AlertDialog.Builder(this).create();
-        AboutDialog.setView(AboutDialogView);
+        final View DialogView = factory.inflate(R.layout.dialog, null);
+        final AlertDialog Dialog = new AlertDialog.Builder(this).create();
+        Dialog.setView(DialogView);
         TextView textDialog;
-    /*    if (AboutDialogView != null) {
-            textDialog = (TextView) AboutDialogView.findViewById(R.id.txt_dialog);
-            textDialog.setText("dddddddddddd");
-        }*/
-        AboutDialog.show();
+        if (DialogView != null) {
+            textDialog = (TextView) DialogView.findViewById(R.id.txt_dialog);
+            textDialog.setText(getString(R.string.txt_about));
+        }
+        Dialog.show();
     }
 
     public void ContactClick(View view) {
         LayoutInflater factory = LayoutInflater.from(this);
-        final View AboutDialogView = factory.inflate(R.layout.about_dialog, null);
-        final AlertDialog AboutDialog = new AlertDialog.Builder(this).create();
-        AboutDialog.setView(AboutDialogView);
+        final View DialogView = factory.inflate(R.layout.dialog, null);
+        final AlertDialog Dialog = new AlertDialog.Builder(this).create();
+        Dialog.setView(DialogView);
         TextView textDialog;
-        if (AboutDialogView != null) {
-            textDialog = (TextView) AboutDialogView.findViewById(R.id.txt_dialog);
-            textDialog.setText("این برنامه به سفارش دانشگاه آزاد اسلامی واحد مهدیشهر توسط شرکت فناوری اطلاعات وارتباطات ریما نوشته شده است \n" +
-                    "\n" +
-                    "در صورتی که نیاز به اطلاعات بیشتر یا طراحی سایت و برنامه نویسی موبایل اختصاصی دارید با شماره تماس 44956515 تماس حاصل فرمایید.");
+        if (DialogView != null) {
+            textDialog = (TextView) DialogView.findViewById(R.id.txt_dialog);
+            textDialog.setText(getString(R.string.txt_contact));
         }
-        AboutDialog.show();
+        Dialog.show();
     }
 }
 

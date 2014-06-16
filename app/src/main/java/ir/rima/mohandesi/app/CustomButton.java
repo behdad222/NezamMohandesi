@@ -5,9 +5,6 @@ import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.Button;
 
-/**
- * Created by behdad on 6/7/14.
- */
 public class CustomButton extends Button {
     public CustomButton(Context context) {
         super(context);

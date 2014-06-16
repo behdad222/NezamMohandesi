@@ -1,11 +1,9 @@
 package ir.rima.mohandesi.app;
 
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +14,6 @@ public class MainActivity extends Activity {
 
     Button button;
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,18 +40,10 @@ public class MainActivity extends Activity {
 
         button = (Button) findViewById(R.id.ContactButton);
         button.setTypeface(font);
-
-
-
     }
 
     public void ListClick (View view) {
         Intent i = new Intent(this, ir.rima.mohandesi.app.ListActivity.class);
-        startActivity(i);
-    }
-
-    public void SearchClick (View view) {
-        Intent i = new Intent(this, ir.rima.mohandesi.app.SelectActivity.class);
         startActivity(i);
     }
 
@@ -70,29 +59,27 @@ public class MainActivity extends Activity {
 
     public void AboutClick(View view) {
         LayoutInflater factory = LayoutInflater.from(this);
-        final View AboutDialogView = factory.inflate(R.layout.about_dialog, null);
-        final AlertDialog AboutDialog = new AlertDialog.Builder(this).create();
-        AboutDialog.setView(AboutDialogView);
+        final View DialogView = factory.inflate(R.layout.dialog, null);
+        final AlertDialog Dialog = new AlertDialog.Builder(this).create();
+        Dialog.setView(DialogView);
         TextView textDialog;
-    /*    if (AboutDialogView != null) {
-            textDialog = (TextView) AboutDialogView.findViewById(R.id.txt_dialog);
-            textDialog.setText("dddddddddddd");
-        }*/
-        AboutDialog.show();
+        if (DialogView != null) {
+            textDialog = (TextView) DialogView.findViewById(R.id.txt_dialog);
+            textDialog.setText(getString(R.string.txt_about));
+        }
+        Dialog.show();
     }
 
     public void ContactClick(View view) {
         LayoutInflater factory = LayoutInflater.from(this);
-        final View AboutDialogView = factory.inflate(R.layout.about_dialog, null);
-        final AlertDialog AboutDialog = new AlertDialog.Builder(this).create();
-        AboutDialog.setView(AboutDialogView);
+        final View DialogView = factory.inflate(R.layout.dialog, null);
+        final AlertDialog Dialog = new AlertDialog.Builder(this).create();
+        Dialog.setView(DialogView);
         TextView textDialog;
-        if (AboutDialogView != null) {
-            textDialog = (TextView) AboutDialogView.findViewById(R.id.txt_dialog);
-            textDialog.setText("این برنامه به سفارش دانشگاه آزاد اسلامی واحد مهدیشهر توسط شرکت فناوری اطلاعات وارتباطات ریما نوشته شده است \n" +
-                    "\n" +
-                    "در صورتی که نیاز به اطلاعات بیشتر یا طراحی سایت و برنامه نویسی موبایل اختصاصی دارید با شماره تماس 44956515 تماس حاصل فرمایید.");
+        if (DialogView != null) {
+            textDialog = (TextView) DialogView.findViewById(R.id.txt_dialog);
+            textDialog.setText(getString(R.string.txt_contact));
         }
-        AboutDialog.show();
+        Dialog.show();
     }
 }

@@ -17,5 +17,4 @@ public class SelectActivity extends Activity{
         Intent i = new Intent(this, ir.rima.mohandesi.app.ShowActivity.class);
         startActivity(i);
     }
-
 }

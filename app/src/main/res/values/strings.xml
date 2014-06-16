@@ -37,9 +37,14 @@
     <string name="chapter4">فصل ۴</string>
     <string name="chapter5">فصل ۵</string>
     <string name="chapter6">فصل ۶</string>
-    <string name="chapter7">فصل ۷</string>
-    <string name="chapter8">فصل ۸</string>
-    <string name="chapter9">فصل ۹</string>
-    <string name="chapter10">فصل ۱۰</string>
-
+    <string name="chapterTotal">کامل</string>
+    <string name="Previous">قبلی</string>
+    <string name="Next">بعدی</string>
+    <string name="Search">سرچ</string>
+    <string name="txt_about">با این برنامه می‌توانید همیشه قوانین نظام مهندسی را همراه خود داشته باشید.</string>
+    <string name="txt_contact">
+        این برنامه به سفارش دانشگاه آزاد اسلامی واحد مهدیشهر توسط شرکت فناوری اطلاعات و ارتباطات ریما نوشته شده است.
+        \n
+در صورتی که نیاز به اطلاعات بیشتر یا طراحی سایت و برنامه نویسی موبایل اختصاصی دارید با شماره 44956515 تماس حاصل فرمایید.
+    </string>
 </resources>

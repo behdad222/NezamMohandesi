@@ -13,74 +13,74 @@
         android:layout_above="@+id/line"
         android:layout_centerHorizontal="true">
 
-            <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chapter1"
-        android:onClick="fasl1"
-        android:id="@+id/chapter1button"
-        style="@style/ButtonStyle1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chapter1"
+                android:onClick="Chapter1Click"
+                android:id="@+id/chapter1button"
+                style="@style/ButtonStyle1"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chapter2"
-        android:onClick="fasl2"
-        android:id="@+id/chapter2button"
-        style="@style/ButtonStyle1"
-        android:layout_below="@+id/chapter1button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chapter2"
+                android:onClick="Chapter2Click"
+                android:id="@+id/chapter2button"
+                style="@style/ButtonStyle1"
+                android:layout_below="@+id/chapter1button" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chapter3"
-        android:onClick="fasl3"
-        android:id="@+id/chapter3button"
-        style="@style/ButtonStyle1"
-        android:layout_below="@+id/chapter2button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chapter3"
+                android:onClick="Chapter3Click"
+                android:id="@+id/chapter3button"
+                style="@style/ButtonStyle1"
+                android:layout_below="@+id/chapter2button" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chapter4"
-        android:onClick="fasl4"
-        android:id="@+id/chapter4button"
-        style="@style/ButtonStyle1"
-        android:layout_below="@+id/chapter3button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chapter4"
+                android:onClick="Chapter4Click"
+                android:id="@+id/chapter4button"
+                style="@style/ButtonStyle1"
+                android:layout_below="@+id/chapter3button" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chapter5"
-        android:onClick="fasl5"
-        android:id="@+id/chapter5button"
-        style="@style/ButtonStyle1"
-        android:layout_below="@+id/chapter4button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chapter5"
+                android:onClick="Chapter5Click"
+                android:id="@+id/chapter5button"
+                style="@style/ButtonStyle1"
+                android:layout_below="@+id/chapter4button" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chapter6"
-        android:onClick="fasl6"
-        android:id="@+id/chapter6button"
-        style="@style/ButtonStyle1"
-        android:layout_below="@+id/chapter5button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chapter6"
+                android:onClick="Chapter6Click"
+                android:id="@+id/chapter6button"
+                style="@style/ButtonStyle1"
+                android:layout_below="@+id/chapter5button" />
 
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="کامل"
-        android:onClick="total"
-        android:id="@+id/chapter10button"
-        style="@style/ButtonStyle1"
-        android:layout_below="@+id/chapter6button" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chapterTotal"
+                android:onClick="totalClick"
+                android:id="@+id/total_button"
+                style="@style/ButtonStyle1"
+                android:layout_below="@+id/chapter6button" />
 
         </RelativeLayout>
+
     </ScrollView>
 
     <View
@@ -106,7 +106,9 @@
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
         android:layout_alignLeft="@+id/line"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical|right"
+        android:paddingRight="20dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -123,7 +125,9 @@
         android:layout_marginRight="0dp"
         android:layout_marginTop="0dp"
         android:layout_alignRight="@+id/line"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical|left" />
 
     <View android:layout_width="40dp"
         android:layout_height="40dp"
@@ -134,7 +138,7 @@
         android:layout_marginBottom="14dp" />
 
     <View
-        android:layout_width="5dp"
+        android:layout_width="3dp"
         android:layout_height="68dp"
         android:background="#fff"
         android:id="@+id/line"

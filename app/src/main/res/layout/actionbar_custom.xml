@@ -11,6 +11,7 @@
         android:clickable="false"
         android:focusable="false"
         android:longClickable="false"
-        android:src="@drawable/logo_type" />
+        android:src="@drawable/logo_type"
+        android:contentDescription="@string/app_title" />
 
 </LinearLayout>
